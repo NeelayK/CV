@@ -13,6 +13,10 @@
     --quaternary: #a2754d;
 }
 
+#toggleButton{
+    visibility: visible;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -224,4 +228,81 @@ section ul p:nth-child(2) {
 .link{
     color: var(--quaternary);
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    #toggleButton{
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    header button {
+        margin-top: 1em;
+    }
+    .section {
+        padding: 1.5em;
+        font-size: 1.5rem;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .section p, .section ul {
+        padding: 0 1.5em;
+        font-size: 1.2rem;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-right {
+        justify-content: center;
+        padding-top: 1em;
+    }
+    footer .go-to-top {
+        margin-top: 1em;
+    }
+    .UI1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5em;
+    }
+    #toggleButton{
+        visibility: hidden;
+        padding-bottom: 0;
+        padding: 0;
+        margin: 0;
+    }
+    header button {
+        font-size: 1rem;
+        padding: 0.5em;
+    }
+    .UI1 {
+        font-size: 1.75rem;
+    }
+    .section {
+        padding: 1em;
+        font-size: 1.2rem;
+    }
+    .section p, .section ul {
+        padding: 0 1em;
+        font-size: 1rem;
+    }
+    footer {
+        padding: 1.5em;
+    }
+    footer a {
+        font-size: 1.2rem;
+    }
+    footer .go-to-top {
+        font-size: 1rem;
+    }
 }
