@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+* {
+    font-family: "Teko", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primary: #272727;
+    --secondary: #fbf6ef;
+    --tertiary: #dec6ad;
+    --quaternary: #a2754d;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--primary);
+    overflow-x: hidden;
+}
+
+header button {
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--tertiary);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+header button:hover {
+    color: var(--primary);
+}
+
+.section p a{
+    color: var(--quaternary);
+    text-decoration: none;
+}
+
+.section {
+    padding: 2em 3em;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
+    position: relative;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.section p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding-right: 3em;
+    padding-left: 3em;
+    max-width: 900px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    background-color: var(--primary);
+    position: relative;
+}
+
+.footer-left p {
+    
+    color: var(--secondary);
+    margin: 0;
+}
+
+.footer-right {
+    display: flex;
+    gap: 1em;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 0.25rem;
+    color: var(--secondary);
+    font-size: 1.5rem;
+    transition-duration: 0.25s;
+}
+
+footer a:hover {
+    color: var(--tertiary);
+
+}
+
+footer .go-to-top {
+    cursor: pointer;
+    color: var(--secondary);
+    font-size: 1.25rem;
+}
+
+footer .go-to-top:hover {
+    text-decoration: underline;
+    color: var(--tertiary);
+}
+
+footer i {
+    font-size: 1.75rem;
+    padding-top: 1rem;
+}
+
+footer i:hover {
+    color: var(--tertiary);
+}
+
+section:nth-child(even) {
+    background: var(--primary);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    padding: 3em;
+    color: var(--tertiary);
+}
+
+section:nth-child(odd) {
+    background: var(--secondary);
+}
+
+.UI1 {
+    font-size: 2.25rem;
+    padding-left: 1rem;
+    color: var(--tertiary);
+}
+
+header {
+    position: fixed;
+    background-color: var(--primary);
+    width: 100%;
+    top: 0;
+    box-shadow: 0 0 5px var(--primary);
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    z-index: 2005;
+    transition: background-color 0.3s;
+}
+
+header .UI1 {
+    color: var(--tertiary);
+    font-size: 1.75rem;
+}
+
+header button {
+    padding: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: var(--tertiary);
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header button:hover {
+    color: var(--primary);
+}
+
+header button:hover {
+    color: var(--button-hover-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#about, #skills, #contact, #experience {
+    padding: 3em 5em;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+section p {
+    line-height: 1.8;
+    padding-top: 1em;
+    font-size: 1.2rem;
+    max-width: 1000px;
+    padding-right: 20%;
+}
+section ul {
+    line-height: 1.8;
+    padding-top: 1em;
+    font-size: 1.5rem;
+    max-width: 1000px;
+    padding-right: 20%;
+}
+
+section ul p {
+    padding: 0;
+    margin: 0;
+}
+
+
+section ul p:nth-child(1) {
+    padding: 0%;
+    margin: 0%;
+}
+
+section ul p:nth-child(2) {
+    padding-left: 1rem;
+    font-size:1.25rem;
+}
+
+.link{
+    color: var(--quaternary);
+    text-decoration: none;
+}
